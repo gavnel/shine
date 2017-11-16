@@ -1,0 +1,11 @@
+version: '2'
+services:
+    shinegateway-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/shinegateway/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=shinegateway
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
